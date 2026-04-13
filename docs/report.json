@@ -6,202 +6,2324 @@
     "languages": [
       "Python"
     ],
-    "file_count": 9,
-    "total_lines": 975,
+    "file_count": 11,
+    "total_lines": 985,
     "branch": "main"
   },
   "static": {
     "repo_name": "GiFrac",
-    "score": 0.0,
+    "score": 7.24,
     "summary": {
-      "error": 14,
-      "warning": 0,
+      "error": 40,
+      "warning": 169,
       "info": 0
     },
     "issues": [
       {
         "file": "workspace\\GiFrac\\main.py",
-        "line": 35,
-        "column": 45,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (main, line 35)'",
-        "severity": "error",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
-        "line": 31,
-        "column": 29,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (benchmark_system, line 31)'",
-        "severity": "error",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
-        "line": 30,
-        "column": 20,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (complexity_evaluator, line 30)'",
-        "severity": "error",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
-        "line": 39,
-        "column": 41,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (llm_refactoring_engine, line 39)'",
-        "severity": "error",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
-        "line": 61,
-        "column": 22,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (report_generator, line 61)'",
-        "severity": "error",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
-        "line": 34,
-        "column": 92,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (repo_loader, line 34)'",
-        "severity": "error",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
-        "line": 34,
-        "column": 41,
-        "code": "E0001",
-        "message": "Parsing failed: 'unindent does not match any outer indentation level (static_analyzer, line 34)'",
-        "severity": "error",
+        "line": 26,
+        "column": 0,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
         "tool": "pylint"
       },
       {
         "file": "workspace\\GiFrac\\main.py",
-        "line": 35,
-        "column": 46,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "line": 12,
+        "column": 0,
+        "code": "C0411",
+        "message": "standard import \"sys\" should be placed before first party imports \"pipeline.report_generator.ReportGenerator\", \"pipeline.benchmark_system.BenchmarkSystem\", \"pipeline.llm_refactoring_engine.LLMRefactoringEngine\", \"pipeline.complexity_evaluator.ComplexityEvaluator\", \"pipeline.static_analyzer.StaticAnalyzer\", \"pipeline.repo_loader.RepoLoader\" ",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\main.py",
+        "line": 13,
+        "column": 0,
+        "code": "C0411",
+        "message": "standard import \"json\" should be placed before first party imports \"pipeline.report_generator.ReportGenerator\", \"pipeline.benchmark_system.BenchmarkSystem\", \"pipeline.llm_refactoring_engine.LLMRefactoringEngine\", \"pipeline.complexity_evaluator.ComplexityEvaluator\", \"pipeline.static_analyzer.StaticAnalyzer\", \"pipeline.repo_loader.RepoLoader\" ",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\main.py",
+        "line": 14,
+        "column": 0,
+        "code": "C0411",
+        "message": "standard import \"logging\" should be placed before first party imports \"pipeline.report_generator.ReportGenerator\", \"pipeline.benchmark_system.BenchmarkSystem\", \"pipeline.llm_refactoring_engine.LLMRefactoringEngine\", \"pipeline.complexity_evaluator.ComplexityEvaluator\", \"pipeline.static_analyzer.StaticAnalyzer\", \"pipeline.repo_loader.RepoLoader\" ",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\main.py",
+        "line": 15,
+        "column": 0,
+        "code": "C0411",
+        "message": "standard import \"argparse\" should be placed before first party imports \"pipeline.report_generator.ReportGenerator\", \"pipeline.benchmark_system.BenchmarkSystem\", \"pipeline.llm_refactoring_engine.LLMRefactoringEngine\", \"pipeline.complexity_evaluator.ComplexityEvaluator\", \"pipeline.static_analyzer.StaticAnalyzer\", \"pipeline.repo_loader.RepoLoader\" ",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\main.py",
+        "line": 16,
+        "column": 0,
+        "code": "C0411",
+        "message": "standard import \"pathlib.Path\" should be placed before first party imports \"pipeline.report_generator.ReportGenerator\", \"pipeline.benchmark_system.BenchmarkSystem\", \"pipeline.llm_refactoring_engine.LLMRefactoringEngine\", \"pipeline.complexity_evaluator.ComplexityEvaluator\", \"pipeline.static_analyzer.StaticAnalyzer\", \"pipeline.repo_loader.RepoLoader\" ",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 58,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (102/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 59,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (106/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 61,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (105/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 115,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (102/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 118,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (125/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 21,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 21,
+        "column": 0,
+        "code": "R0902",
+        "message": "Too many instance attributes (8/7)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 38,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 44,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 49,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 74,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 83,
+        "column": 19,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 107,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 105,
+        "column": 12,
+        "code": "W0122",
+        "message": "Use of exec",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 121,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 131,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 141,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 148,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 68,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 109,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (103/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 206,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (107/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 24,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 34,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 42,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 49,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 79,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 94,
+        "column": 19,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 95,
+        "column": 16,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 113,
+        "column": 21,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 141,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 146,
+        "column": 21,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 152,
+        "column": 16,
+        "code": "W0612",
+        "message": "Unused variable 'file_path'",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 201,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 67,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 25,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 26,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 27,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 28,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 29,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 30,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 69,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (107/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 24,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 34,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 39,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 69,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 76,
+        "column": 19,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 104,
+        "column": 8,
+        "code": "C0415",
+        "message": "Import outside toplevel (json)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 120,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 106,
+        "column": 12,
+        "code": "C0415",
+        "message": "Import outside toplevel (openai)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 106,
+        "column": 12,
+        "code": "E0401",
+        "message": "Unable to import 'openai'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 125,
+        "column": 8,
+        "code": "C0415",
+        "message": "Import outside toplevel (json, requests)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 125,
+        "column": 8,
+        "code": "C0410",
+        "message": "Multiple imports on one line (json, requests)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 140,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 170,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 55,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 8,
+        "column": 0,
+        "code": "W0611",
+        "message": "Unused import textwrap",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 11,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 12,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 13,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 15,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 17,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 46 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 18,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (103/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 18,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 46 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 19,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (106/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 20,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 46 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 21,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 46 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 22,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 46 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 23,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 46 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 25,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 6 spaces, expected 4",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 26,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 37,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (108/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 44,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (102/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 56,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (105/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 58,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 59,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (104/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 59,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 61,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 62,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 63,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 64,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 67,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 68,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 69,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 70,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 76,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 77,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 78,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 79,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (101/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 79,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 81,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 82,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (104/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 82,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 84,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 85,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 86,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 87,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 92,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 93,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 94,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 95,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 20 spaces, expected 12",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 97,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (109/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 101,
+        "column": 0,
+        "code": "W0311",
+        "message": "Bad indentation. Found 16 spaces, expected 8",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 108,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (114/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 109,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (117/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 110,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (124/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 111,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (144/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 112,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (127/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 113,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (117/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 10,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 15,
+        "column": 6,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 15,
+        "column": 6,
+        "code": "R0913",
+        "message": "Too many arguments (6/5)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 15,
+        "column": 6,
+        "code": "R0917",
+        "message": "Too many positional arguments (6/5)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 25,
+        "column": 6,
+        "code": "R0913",
+        "message": "Too many arguments (7/5)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 25,
+        "column": 6,
+        "code": "R0917",
+        "message": "Too many positional arguments (7/5)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 25,
+        "column": 6,
+        "code": "R0914",
+        "message": "Too many local variables (19/15)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 10,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 65,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (101/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 18,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 45,
+        "column": 12,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 47,
+        "column": 16,
+        "code": "C0415",
+        "message": "Import outside toplevel (stat)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 52,
+        "column": 20,
+        "code": "E0704",
+        "message": "The raise statement is not inside an except clause",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 46,
+        "column": 36,
+        "code": "W0613",
+        "message": "Unused argument 'exc_info'",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 65,
+        "column": 8,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 82,
+        "column": 17,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 86,
+        "column": 22,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 90,
+        "column": 25,
+        "code": "W0621",
+        "message": "Redefining name 'meta' from outer scope (line 118)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 106,
+        "column": 27,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 28,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 67,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (106/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 17,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 28,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 34,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 46,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 56,
+        "column": 16,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 58,
+        "column": 16,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 67,
+        "column": 12,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 79,
+        "column": 12,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 95,
+        "column": 12,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 108,
+        "column": 16,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 114,
+        "column": 27,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 43,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 17,
+        "column": 7,
+        "code": "E221",
+        "message": "multiple spaces before operator",
         "severity": "error",
         "tool": "flake8"
       },
       {
         "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
-        "line": 31,
-        "column": 30,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "line": 89,
+        "column": 16,
+        "code": "E221",
+        "message": "multiple spaces before operator",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 118,
+        "column": 121,
+        "code": "E501",
+        "message": "line too long (125 > 120 characters)",
         "severity": "error",
         "tool": "flake8"
       },
       {
         "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
-        "line": 30,
+        "line": 20,
         "column": 21,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "code": "E261",
+        "message": "at least two spaces before inline comment",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 135,
+        "column": 30,
+        "code": "E741",
+        "message": "ambiguous variable name 'l'",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 136,
+        "column": 35,
+        "code": "E741",
+        "message": "ambiguous variable name 'l'",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 198,
+        "column": 61,
+        "code": "E741",
+        "message": "ambiguous variable name 'l'",
         "severity": "error",
         "tool": "flake8"
       },
       {
         "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
-        "line": 39,
-        "column": 42,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "line": 8,
+        "column": 1,
+        "code": "F401",
+        "message": "'textwrap' imported but unused",
+        "severity": "warning",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 18,
+        "column": 13,
+        "code": "E221",
+        "message": "multiple spaces before operator",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 19,
+        "column": 13,
+        "code": "E221",
+        "message": "multiple spaces before operator",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 20,
+        "column": 12,
+        "code": "E221",
+        "message": "multiple spaces before operator",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 25,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 25,
+        "column": 7,
+        "code": "E117",
+        "message": "over-indented",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 26,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 27,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 28,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 29,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 30,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 125,
+        "column": 20,
+        "code": "E401",
+        "message": "multiple imports on one line",
         "severity": "error",
         "tool": "flake8"
       },
       {
         "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
-        "line": 34,
-        "column": 93,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "line": 46,
+        "column": 13,
+        "code": "E306",
+        "message": "expected 1 blank line before a nested definition, found 0",
         "severity": "error",
         "tool": "flake8"
       },
       {
         "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
-        "line": 61,
-        "column": 23,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "line": 11,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
         "severity": "error",
         "tool": "flake8"
       },
       {
-        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
-        "line": 34,
-        "column": 42,
-        "code": "E999",
-        "message": "IndentationError: unindent does not match any outer indentation level",
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 11,
+        "column": 7,
+        "code": "E117",
+        "message": "over-indented",
         "severity": "error",
         "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 12,
+        "column": 17,
+        "code": "E117",
+        "message": "over-indented",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 15,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 16,
+        "column": 37,
+        "code": "E127",
+        "message": "continuation line over-indented for visual indent",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 17,
+        "column": 47,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 17,
+        "column": 47,
+        "code": "E117",
+        "message": "over-indented",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 18,
+        "column": 47,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 20,
+        "column": 47,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 21,
+        "column": 47,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 22,
+        "column": 47,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 23,
+        "column": 47,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 25,
+        "column": 7,
+        "code": "E111",
+        "message": "indentation is not a multiple of 4",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 26,
+        "column": 17,
+        "code": "E117",
+        "message": "over-indented",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 59,
+        "column": 22,
+        "code": "E221",
+        "message": "multiple spaces before operator",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 110,
+        "column": 121,
+        "code": "E501",
+        "message": "line too long (124 > 120 characters)",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 111,
+        "column": 121,
+        "code": "E501",
+        "message": "line too long (144 > 120 characters)",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 112,
+        "column": 121,
+        "code": "E501",
+        "message": "line too long (127 > 120 characters)",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 122,
+        "column": 9,
+        "code": "E122",
+        "message": "continuation line missing indentation or outdented",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 105,
+        "column": 0,
+        "code": "B102",
+        "message": "Use of exec detected.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 121,
+        "column": 0,
+        "code": "B110",
+        "message": "Try, Except, Pass detected.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 9,
+        "column": 0,
+        "code": "B404",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 113,
+        "column": 0,
+        "code": "B607",
+        "message": "Starting a process with a partial executable path",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 113,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 146,
+        "column": 0,
+        "code": "B607",
+        "message": "Starting a process with a partial executable path",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 146,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 201,
+        "column": 0,
+        "code": "B110",
+        "message": "Try, Except, Pass detected.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 170,
+        "column": 0,
+        "code": "B110",
+        "message": "Try, Except, Pass detected.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 8,
+        "column": 0,
+        "code": "B404",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 82,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 86,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 106,
+        "column": 0,
+        "code": "B110",
+        "message": "Try, Except, Pass detected.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 7,
+        "column": 0,
+        "code": "B404",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 67,
+        "column": 0,
+        "code": "B607",
+        "message": "Starting a process with a partial executable path",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 67,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 79,
+        "column": 0,
+        "code": "B607",
+        "message": "Starting a process with a partial executable path",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 79,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 95,
+        "column": 0,
+        "code": "B607",
+        "message": "Starting a process with a partial executable path",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 95,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 108,
+        "column": 0,
+        "code": "B607",
+        "message": "Starting a process with a partial executable path",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 108,
+        "column": 0,
+        "code": "B603",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "severity": "warning",
+        "tool": "bandit"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 114,
+        "column": 0,
+        "code": "B110",
+        "message": "Try, Except, Pass detected.",
+        "severity": "warning",
+        "tool": "bandit"
       }
     ]
   },
   "complexity": {
     "repo_name": "GiFrac",
-    "overall_mi": 51.06,
-    "maintainability_score": 51.06,
+    "overall_mi": 50.94,
+    "maintainability_score": 50.94,
     "smells": [
-      "Deep nesting (indent level 10): main.py",
-      "Deep nesting (indent level 22): pipeline\\benchmark_system.py",
-      "Deep nesting (indent level 23): pipeline\\complexity_evaluator.py",
-      "Deep nesting (indent level 24): pipeline\\llm_refactoring_engine.py",
+      "Deep nesting (indent level 5): main.py",
+      "Deep nesting (indent level 17): pipeline\\benchmark_system.py",
+      "Deep nesting (indent level 6): pipeline\\complexity_evaluator.py",
+      "Deep nesting (indent level 6): pipeline\\llm_refactoring_engine.py",
       "Deep nesting (indent level 16): pipeline\\report_generator.py",
-      "Deep nesting (indent level 22): pipeline\\repo_loader.py",
-      "Deep nesting (indent level 22): pipeline\\static_analyzer.py"
+      "Deep nesting (indent level 6): pipeline\\repo_loader.py",
+      "Deep nesting (indent level 9): pipeline\\static_analyzer.py"
     ],
     "files": [
       {
         "file": "main.py",
-        "mi": 58.14,
+        "mi": 57.74,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "main",
+            "file": "main.py",
+            "line": 26,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
       },
       {
         "file": "pipeline\\benchmark_system.py",
         "mi": 48.71,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "__post_init__",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 31,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "finalize",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 44,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "as_dict",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 49,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 71,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "run",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 74,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_benchmark_pair",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 88,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_compile",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 102,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_default_args",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 110,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_time",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 125,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_memory",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 134,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_safe_call",
+            "file": "pipeline\\benchmark_system.py",
+            "line": 145,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
       },
       {
         "file": "pipeline\\complexity_evaluator.py",
-        "mi": 50.88,
+        "mi": 50.9,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "as_dict",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 49,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "evaluate",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 79,
+            "cyclomatic_complexity": 6,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "_analyze_file",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 105,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_radon_mi",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 111,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_ast_mi",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 130,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_radon_cc",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 144,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_ast_cc",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 168,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_detect_smells",
+            "file": "pipeline\\complexity_evaluator.py",
+            "line": 188,
+            "cyclomatic_complexity": 7,
+            "rank": "B",
+            "is_smelly": false
+          }
+        ]
       },
       {
         "file": "pipeline\\llm_refactoring_engine.py",
-        "mi": 48.34,
+        "mi": 48.35,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "as_dict",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 39,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "refactor",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 69,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_refactor_function",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 81,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_call_llm",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 96,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_call_openai",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 103,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_call_ollama",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 124,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_rule_based_refactor",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 144,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_extract_source",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 161,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_suggest_structure",
+            "file": "pipeline\\llm_refactoring_engine.py",
+            "line": 174,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
       },
       {
         "file": "pipeline\\report_generator.py",
         "mi": 48.88,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "__init__",
+            "file": "pipeline\\report_generator.py",
+            "line": 11,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "generate",
+            "file": "pipeline\\report_generator.py",
+            "line": 15,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_html",
+            "file": "pipeline\\report_generator.py",
+            "line": 25,
+            "cyclomatic_complexity": 10,
+            "rank": "B",
+            "is_smelly": false
+          }
+        ]
       },
       {
         "file": "pipeline\\repo_loader.py",
-        "mi": 53.43,
+        "mi": 53.05,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "__init__",
+            "file": "pipeline\\repo_loader.py",
+            "line": 34,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "load",
+            "file": "pipeline\\repo_loader.py",
+            "line": 39,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_extract_name",
+            "file": "pipeline\\repo_loader.py",
+            "line": 72,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_build_auth_url",
+            "file": "pipeline\\repo_loader.py",
+            "line": 75,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_clone",
+            "file": "pipeline\\repo_loader.py",
+            "line": 80,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_inventory",
+            "file": "pipeline\\repo_loader.py",
+            "line": 90,
+            "cyclomatic_complexity": 6,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "onerror",
+            "file": "pipeline\\repo_loader.py",
+            "line": 46,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
       },
       {
         "file": "pipeline\\static_analyzer.py",
-        "mi": 49.01,
+        "mi": 48.98,
         "mi_rank": "C",
-        "functions": []
+        "functions": [
+          {
+            "name": "as_dict",
+            "file": "pipeline\\static_analyzer.py",
+            "line": 34,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "analyze",
+            "file": "pipeline\\static_analyzer.py",
+            "line": 46,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_run_pylint",
+            "file": "pipeline\\static_analyzer.py",
+            "line": 66,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_run_flake8",
+            "file": "pipeline\\static_analyzer.py",
+            "line": 78,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_run_bandit",
+            "file": "pipeline\\static_analyzer.py",
+            "line": 94,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_pylint_score",
+            "file": "pipeline\\static_analyzer.py",
+            "line": 106,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
       }
     ]
   },

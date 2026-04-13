@@ -1,29 +1,82 @@
 """
 main.py - AI Code Refactoring and Optimization System
-Pipeline orchestrator: runs all 5 stages in sequence.
+Entry point that wires together the pipeline infrastructure and domain services.
+
+Design Patterns / Principles wired here:
+  - Pipeline (arch.)   : Pipeline.execute() sequences all stages.
+  - Observer           : on_stage_complete logs progress without coupling stages to logging.
+  - Factory            : LLMStrategyFactory.create() picks the right LLM provider.
+  - Dependency Inversion: domain services are constructed here and injected into stages;
+                          stages never instantiate their own dependencies.
 """
 
-from pipeline.report_generator import ReportGenerator
-from pipeline.benchmark_system import BenchmarkSystem
-from pipeline.llm_refactoring_engine import LLMRefactoringEngine
-from pipeline.complexity_evaluator import ComplexityEvaluator
-from pipeline.static_analyzer import StaticAnalyzer
-from pipeline.repo_loader import RepoLoader
 import sys
-import json
 import logging
 import argparse
 from pathlib import Path
 
+from pipeline.base import Pipeline
+from pipeline.benchmark_system import BenchmarkSystem
+from pipeline.complexity_evaluator import ComplexityEvaluator
+from pipeline.llm_refactoring_engine import LLMRefactoringEngine
+from pipeline.repo_loader import RepoLoader
+from pipeline.report_generator import ReportGenerator
+from pipeline.stages import (
+    BenchmarkStage,
+    ComplexityStage,
+    LoadRepoStage,
+    RefactoringStage,
+    ReportStage,
+    StaticAnalysisStage,
+)
+from pipeline.static_analyzer import StaticAnalyzer
+from pipeline.strategies import LLMStrategyFactory
+
 sys.path.insert(0, str(Path(__file__).parent / "pipeline"))
 
-
-logging.basicConfig(level=logging.INFO,
-                    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+)
 logger = logging.getLogger("main")
 
 
-def main():
+def _on_stage_complete(stage_name: str, result: object) -> None:
+    """Observer callback: fired by Pipeline after each stage completes."""
+    logger.info("Stage '%s' complete", stage_name)
+
+
+def build_pipeline(args: argparse.Namespace) -> Pipeline:
+    """
+    Factory / wiring function — constructs every domain service and stage adapter,
+    then assembles them into a Pipeline.
+
+    All dependencies flow inward (DIP): services are created here and injected
+    into stages via constructor arguments.
+    """
+    output_dir = Path(args.output)
+    strategy = LLMStrategyFactory.create()
+
+    stages = [
+        LoadRepoStage(
+            loader=RepoLoader(workspace=args.workspace),
+            repo_url=args.repo_url,
+            branch=args.branch,
+        ),
+        StaticAnalysisStage(analyzer=StaticAnalyzer()),
+        ComplexityStage(evaluator=ComplexityEvaluator()),
+        RefactoringStage(engine=LLMRefactoringEngine(strategy=strategy)),
+        BenchmarkStage(system=BenchmarkSystem(iterations=args.iterations)),
+        ReportStage(
+            generator=ReportGenerator(str(output_dir)),
+            output_dir=str(output_dir),
+        ),
+    ]
+
+    return Pipeline(stages=stages, on_stage_complete=_on_stage_complete)
+
+
+def main() -> None:
     parser = argparse.ArgumentParser(description="AI Code Refactoring System")
     parser.add_argument("repo_url", help="GitHub repository URL")
     parser.add_argument("--branch", default="main")
@@ -34,52 +87,8 @@ def main():
 
     logger.info("Target: %s", args.repo_url)
 
-    # Stage 1
-    meta = RepoLoader(workspace=args.workspace).load(
-        args.repo_url, branch=args.branch)
-    logger.info("Loaded %s: %d files", meta.name, meta.file_count)
-
-    # Stage 2
-    static_report = StaticAnalyzer().analyze(meta.local_path, meta.name)
-    logger.info("Static issues: %d | score: %.1f", len(
-        static_report.issues), static_report.score)
-
-    # Stage 3
-    complexity_report = ComplexityEvaluator().evaluate(meta.local_path, meta.name)
-    logger.info("Maintainability: %.1f | smells: %d",
-                complexity_report.maintainability_score, len(complexity_report.smells))
-
-    # Stage 4
-    smelly_fns = [
-        {"file": fn.file, "name": fn.name, "line": fn.line, "source_code": None}
-        for fc in complexity_report.files for fn in fc.functions if fn.is_smelly
-    ]
-    refactoring_report = LLMRefactoringEngine().refactor(
-        meta.local_path, meta.name, smelly_fns)
-    logger.info("Refactored: %d functions", len(refactoring_report.results))
-
-    # Stage 5
-    benchmark_report = BenchmarkSystem(iterations=args.iterations).run(
-        refactoring_report.results, meta.name)
-    logger.info("Speedup: %.2fx", benchmark_report.overall_speedup)
-
-    # Stage 6 - Report
-    output_dir = Path(args.output)
-    output_dir.mkdir(parents=True, exist_ok=True)
-    ReportGenerator(str(output_dir)).generate(
-        meta=meta, static_report=static_report,
-        complexity_report=complexity_report,
-        refactoring_report=refactoring_report,
-        benchmark_report=benchmark_report,
-    )
-    (output_dir / "report.json").write_text(json.dumps({
-        "repo": meta.__dict__,
-        "static": static_report.as_dict(),
-        "complexity": complexity_report.as_dict(),
-        "refactoring": refactoring_report.as_dict(),
-        "benchmarks": benchmark_report.as_dict(),
-    }, indent=2))
-    logger.info("Reports saved to %s", output_dir)
+    pipeline = build_pipeline(args)
+    pipeline.execute(initial_context={})
 
 
 if __name__ == "__main__":

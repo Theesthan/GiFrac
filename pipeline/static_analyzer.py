@@ -1,6 +1,12 @@
 """
 static_analyzer.py - Pipeline Stage 2
 Runs static analysis tools (pylint, flake8, bandit) on the cloned repository.
+
+Design Principles applied here:
+  - Open/Closed Principle : StaticAnalyzer is open for extension (new tools can be
+                            registered with register_tool()) but closed for modification
+                            (adding a tool never requires changing existing methods).
+  - Single Responsibility : Each _run_* method handles exactly one external tool.
 """
 
 import json
@@ -8,7 +14,7 @@ import subprocess
 import logging
 from pathlib import Path
 from dataclasses import dataclass, field
-from typing import List, Dict, Any
+from typing import Callable, List, Dict, Any, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -41,15 +47,41 @@ class StaticAnalysisReport:
 
 
 class StaticAnalyzer:
-    """Stage 2: Run pylint, flake8, and bandit; aggregate findings."""
+    """
+    Stage 2: Run static analysis tools and aggregate findings.
+
+    Open/Closed Principle: the default tool set (pylint, flake8, bandit) is
+    initialised in __init__.  Additional tools can be registered via
+    register_tool() without modifying any existing method.
+    """
+
+    def __init__(self) -> None:
+        # Each entry is (tool_name, runner_callable).
+        # Mutating this list after construction is intentional (OCP extension point).
+        self._tools: List[Tuple[str, Callable[[Path], List[Issue]]]] = [
+            ("pylint", self._run_pylint),
+            ("flake8", self._run_flake8),
+            ("bandit", self._run_bandit),
+        ]
+
+    def register_tool(
+        self, name: str, runner: Callable[[Path], List[Issue]]
+    ) -> None:
+        """
+        OCP extension point — add a custom analysis tool without modifying this class.
+
+        Example::
+            def run_mypy(path: Path) -> list[Issue]:
+                ...
+            analyzer.register_tool("mypy", run_mypy)
+        """
+        self._tools.append((name, runner))
 
     def analyze(self, local_path: str, repo_name: str) -> StaticAnalysisReport:
         report = StaticAnalysisReport(repo_name=repo_name)
         path = Path(local_path)
 
-        for tool, runner in [("pylint", self._run_pylint),
-                             ("flake8", self._run_flake8),
-                             ("bandit", self._run_bandit)]:
+        for tool, runner in self._tools:
             try:
                 issues = runner(path)
                 report.issues.extend(issues)
