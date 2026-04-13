@@ -1,0 +1,221 @@
+{
+  "repo": {
+    "url": "https://github.com/Theesthan/GiFrac",
+    "name": "GiFrac",
+    "local_path": "workspace\\GiFrac",
+    "languages": [
+      "Python"
+    ],
+    "file_count": 9,
+    "total_lines": 975,
+    "branch": "main"
+  },
+  "static": {
+    "repo_name": "GiFrac",
+    "score": 0.0,
+    "summary": {
+      "error": 14,
+      "warning": 0,
+      "info": 0
+    },
+    "issues": [
+      {
+        "file": "workspace\\GiFrac\\main.py",
+        "line": 35,
+        "column": 45,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (main, line 35)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 31,
+        "column": 29,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (benchmark_system, line 31)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 30,
+        "column": 20,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (complexity_evaluator, line 30)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 39,
+        "column": 41,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (llm_refactoring_engine, line 39)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 61,
+        "column": 22,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (report_generator, line 61)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 34,
+        "column": 92,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (repo_loader, line 34)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 34,
+        "column": 41,
+        "code": "E0001",
+        "message": "Parsing failed: 'unindent does not match any outer indentation level (static_analyzer, line 34)'",
+        "severity": "error",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace\\GiFrac\\main.py",
+        "line": 35,
+        "column": 46,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\benchmark_system.py",
+        "line": 31,
+        "column": 30,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\complexity_evaluator.py",
+        "line": 30,
+        "column": 21,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\llm_refactoring_engine.py",
+        "line": 39,
+        "column": 42,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\repo_loader.py",
+        "line": 34,
+        "column": 93,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\report_generator.py",
+        "line": 61,
+        "column": 23,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      },
+      {
+        "file": "workspace\\GiFrac\\pipeline\\static_analyzer.py",
+        "line": 34,
+        "column": 42,
+        "code": "E999",
+        "message": "IndentationError: unindent does not match any outer indentation level",
+        "severity": "error",
+        "tool": "flake8"
+      }
+    ]
+  },
+  "complexity": {
+    "repo_name": "GiFrac",
+    "overall_mi": 51.06,
+    "maintainability_score": 51.06,
+    "smells": [
+      "Deep nesting (indent level 10): main.py",
+      "Deep nesting (indent level 22): pipeline\\benchmark_system.py",
+      "Deep nesting (indent level 23): pipeline\\complexity_evaluator.py",
+      "Deep nesting (indent level 24): pipeline\\llm_refactoring_engine.py",
+      "Deep nesting (indent level 16): pipeline\\report_generator.py",
+      "Deep nesting (indent level 22): pipeline\\repo_loader.py",
+      "Deep nesting (indent level 22): pipeline\\static_analyzer.py"
+    ],
+    "files": [
+      {
+        "file": "main.py",
+        "mi": 58.14,
+        "mi_rank": "C",
+        "functions": []
+      },
+      {
+        "file": "pipeline\\benchmark_system.py",
+        "mi": 48.71,
+        "mi_rank": "C",
+        "functions": []
+      },
+      {
+        "file": "pipeline\\complexity_evaluator.py",
+        "mi": 50.88,
+        "mi_rank": "C",
+        "functions": []
+      },
+      {
+        "file": "pipeline\\llm_refactoring_engine.py",
+        "mi": 48.34,
+        "mi_rank": "C",
+        "functions": []
+      },
+      {
+        "file": "pipeline\\report_generator.py",
+        "mi": 48.88,
+        "mi_rank": "C",
+        "functions": []
+      },
+      {
+        "file": "pipeline\\repo_loader.py",
+        "mi": 53.43,
+        "mi_rank": "C",
+        "functions": []
+      },
+      {
+        "file": "pipeline\\static_analyzer.py",
+        "mi": 49.01,
+        "mi_rank": "C",
+        "functions": []
+      }
+    ]
+  },
+  "refactoring": {
+    "repo_name": "GiFrac",
+    "structural_suggestions": [
+      "No tests found - add a tests/ directory with pytest"
+    ],
+    "refactored_functions": []
+  },
+  "benchmarks": {
+    "repo_name": "GiFrac",
+    "overall_speedup": 1.0,
+    "total_memory_saved_kb": 0,
+    "benchmarks": []
+  }
+}

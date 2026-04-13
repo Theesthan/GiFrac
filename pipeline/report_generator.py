@@ -58,47 +58,47 @@ class ReportGenerator:
                 smells = "".join(f"<li>{s}</li>" for s in cx.smells) or "<li>None.</li>"
                 suggs  = "".join(f"<li>{s}</li>" for s in rf.structural_suggestions) or "<li>None.</li>"
 
-          issues = ""
-        for i in st.issues[:50]:
-                      pc = "pr" if i.severity == "error" else "py"
-                      issues += (f"<tr><td>{i.file}:{i.line}</td>"
-                                 f"<td><span class='pill {pc}'>{i.severity}</span></td>"
-                                 f"<td>{i.code}</td><td>{i.message}</td><td>{i.tool}</td></tr>")
-                  if not issues:
-                                issues_sec = "<p>No issues found.</p>"
-else:
-            issues_sec = (
-                              "<table><thead><tr><th>Location</th><th>Severity</th>"
-                              "<th>Code</th><th>Message</th><th>Tool</th></tr></thead>"
-                              f"<tbody>{issues}</tbody></table>"
-            )
+                issues = ""
+                for i in st.issues[:50]:
+                    pc = "pr" if i.severity == "error" else "py"
+                    issues += (f"<tr><td>{i.file}:{i.line}</td>"
+                               f"<td><span class='pill {pc}'>{i.severity}</span></td>"
+                               f"<td>{i.code}</td><td>{i.message}</td><td>{i.tool}</td></tr>")
+                if not issues:
+                    issues_sec = "<p>No issues found.</p>"
+                else:
+                    issues_sec = (
+                        "<table><thead><tr><th>Location</th><th>Severity</th>"
+                        "<th>Code</th><th>Message</th><th>Tool</th></tr></thead>"
+                        f"<tbody>{issues}</tbody></table>"
+                    )
 
-        cards = ""
-        for r in rf.results:
-                      imps = "".join(f"<li>{i}</li>" for i in r.improvements)
-                      cards += (f"<div class='rc'><h3>{r.original_function}() - {r.original_file}</h3>"
-                                f"<p><em>{r.rationale}</em></p><ul>{imps}</ul></div>")
-                  if not cards:
-                                cards = "<p>No refactoring suggestions (no smells found or LLM not configured).</p>"
+                cards = ""
+                for r in rf.results:
+                    imps = "".join(f"<li>{i}</li>" for i in r.improvements)
+                    cards += (f"<div class='rc'><h3>{r.original_function}() - {r.original_file}</h3>"
+                              f"<p><em>{r.rationale}</em></p><ul>{imps}</ul></div>")
+                if not cards:
+                    cards = "<p>No refactoring suggestions (no smells found or LLM not configured).</p>"
 
-        brows = ""
-        for r in bk.results:
-                      pc = "pg" if r.speedup_ratio >= 1.1 else "py"
-                      brows += (f"<tr><td>{r.function_name}</td><td>{r.file}</td>"
-                                f"<td>{r.original_time_ms:.4f}ms</td>"
-                                f"<td>{r.refactored_time_ms:.4f}ms</td>"
-                                f"<td><span class='pill {pc}'>{r.speedup_ratio:.2f}x</span></td>"
-                                f"<td>{r.memory_delta_kb:.2f}KB</td></tr>")
-                  if not brows:
-                                bench_sec = "<p>No benchmarks available.</p>"
-else:
-            bench_sec = (
-                              "<table><thead><tr><th>Function</th><th>File</th>"
-                              "<th>Original</th><th>Refactored</th><th>Speedup</th><th>Mem Saved</th></tr></thead>"
-                              f"<tbody>{brows}</tbody></table>"
-            )
+                brows = ""
+                for r in bk.results:
+                    pc = "pg" if r.speedup_ratio >= 1.1 else "py"
+                    brows += (f"<tr><td>{r.function_name}</td><td>{r.file}</td>"
+                              f"<td>{r.original_time_ms:.4f}ms</td>"
+                              f"<td>{r.refactored_time_ms:.4f}ms</td>"
+                              f"<td><span class='pill {pc}'>{r.speedup_ratio:.2f}x</span></td>"
+                              f"<td>{r.memory_delta_kb:.2f}KB</td></tr>")
+                if not brows:
+                    bench_sec = "<p>No benchmarks available.</p>"
+                else:
+                    bench_sec = (
+                        "<table><thead><tr><th>Function</th><th>File</th>"
+                        "<th>Original</th><th>Refactored</th><th>Speedup</th><th>Mem Saved</th></tr></thead>"
+                        f"<tbody>{brows}</tbody></table>"
+                    )
 
-        return (
+                return (
                       "<!DOCTYPE html><html lang='en'><head>"
                       f"<meta charset='UTF-8'><title>Refactoring Report - {m.name}</title>"
                       f"<style>{css}</style></head><body>"
