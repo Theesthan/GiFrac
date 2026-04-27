@@ -2672,15 +2672,15 @@
   },
   "benchmarks": {
     "repo_name": "GiFrac",
-    "overall_speedup": 0.7,
+    "overall_speedup": 0.6,
     "total_memory_saved_kb": 0.0,
     "benchmarks": [
       {
         "function": "_html",
         "file": "pipeline/report_generator.py",
-        "original_ms": 0.0007,
-        "refactored_ms": 0.0008,
-        "speedup": 0.7,
+        "original_ms": 0.0006,
+        "refactored_ms": 0.0006,
+        "speedup": 0.6,
         "memory_delta_kb": 0.0
       }
     ]
