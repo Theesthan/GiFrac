@@ -12,10 +12,10 @@
   },
   "static": {
     "repo_name": "GiFrac",
-    "score": 7.9,
+    "score": 7.93,
     "summary": {
       "error": 28,
-      "warning": 162,
+      "warning": 160,
       "info": 0
     },
     "issues": [
@@ -247,6 +247,177 @@
       {
         "file": "workspace/GiFrac/pipeline/strategies.py",
         "line": 113,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 58,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (102/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 59,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (106/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 61,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (105/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 115,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (102/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 118,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (125/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 21,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 21,
+        "column": 0,
+        "code": "R0902",
+        "message": "Too many instance attributes (8/7)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 38,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 44,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 49,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 74,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 83,
+        "column": 19,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 107,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 105,
+        "column": 12,
+        "code": "W0122",
+        "message": "Use of exec",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 121,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 131,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 141,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 148,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
+        "line": 68,
         "column": 0,
         "code": "R0903",
         "message": "Too few public methods (1/2)",
@@ -741,7 +912,7 @@
       },
       {
         "file": "workspace/GiFrac/pipeline/report_generator.py",
-        "line": 15,
+        "line": 25,
         "column": 6,
         "code": "R0913",
         "message": "Too many arguments (6/5)",
@@ -750,28 +921,10 @@
       },
       {
         "file": "workspace/GiFrac/pipeline/report_generator.py",
-        "line": 15,
+        "line": 25,
         "column": 6,
         "code": "R0917",
         "message": "Too many positional arguments (6/5)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/report_generator.py",
-        "line": 25,
-        "column": 6,
-        "code": "R0913",
-        "message": "Too many arguments (7/5)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/report_generator.py",
-        "line": 25,
-        "column": 6,
-        "code": "R0917",
-        "message": "Too many positional arguments (7/5)",
         "severity": "warning",
         "tool": "pylint"
       },
@@ -794,62 +947,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/base.py",
-        "line": 43,
-        "column": 0,
-        "code": "R0903",
-        "message": "Too few public methods (1/2)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 58,
-        "column": 0,
-        "code": "C0301",
-        "message": "Line too long (102/100)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 59,
-        "column": 0,
-        "code": "C0301",
-        "message": "Line too long (106/100)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 61,
-        "column": 0,
-        "code": "C0301",
-        "message": "Line too long (105/100)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 115,
-        "column": 0,
-        "code": "C0301",
-        "message": "Line too long (102/100)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 118,
-        "column": 0,
-        "code": "C0301",
-        "message": "Line too long (125/100)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 21,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 26,
         "column": 0,
         "code": "C0115",
         "message": "Missing class docstring",
@@ -857,17 +956,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 21,
-        "column": 0,
-        "code": "R0902",
-        "message": "Too many instance attributes (8/7)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 38,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 36,
         "column": 0,
         "code": "C0115",
         "message": "Missing class docstring",
@@ -875,8 +965,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 44,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 41,
         "column": 4,
         "code": "C0116",
         "message": "Missing function or method docstring",
@@ -884,8 +974,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 49,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 79,
         "column": 4,
         "code": "C0116",
         "message": "Missing function or method docstring",
@@ -893,17 +983,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 74,
-        "column": 4,
-        "code": "C0116",
-        "message": "Missing function or method docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 83,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 88,
         "column": 19,
         "code": "W0718",
         "message": "Catching too general exception Exception",
@@ -911,8 +992,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 107,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 122,
         "column": 15,
         "code": "W0718",
         "message": "Catching too general exception Exception",
@@ -920,53 +1001,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 105,
-        "column": 12,
-        "code": "W0122",
-        "message": "Use of exec",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 121,
-        "column": 15,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 131,
-        "column": 15,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 141,
-        "column": 15,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 148,
-        "column": 15,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/benchmark_system.py",
-        "line": 68,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 57,
         "column": 0,
         "code": "R0903",
         "message": "Too few public methods (1/2)",
@@ -1217,62 +1253,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 26,
-        "column": 0,
-        "code": "C0115",
-        "message": "Missing class docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 36,
-        "column": 0,
-        "code": "C0115",
-        "message": "Missing class docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 41,
-        "column": 4,
-        "code": "C0116",
-        "message": "Missing function or method docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 79,
-        "column": 4,
-        "code": "C0116",
-        "message": "Missing function or method docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 88,
-        "column": 19,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 122,
-        "column": 15,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 57,
+        "file": "workspace/GiFrac/pipeline/base.py",
+        "line": 43,
         "column": 0,
         "code": "R0903",
         "message": "Too few public methods (1/2)",
@@ -1739,13 +1721,13 @@
       "Deep nesting (indent level 6): main.py",
       "Deep nesting (indent level 6): pipeline/repo_loader.py",
       "Deep nesting (indent level 5): pipeline/strategies.py",
-      "Deep nesting (indent level 9): pipeline/stages.py",
-      "Deep nesting (indent level 16): pipeline/report_generator.py",
-      "Deep nesting (indent level 5): pipeline/base.py",
       "Deep nesting (indent level 17): pipeline/benchmark_system.py",
+      "Deep nesting (indent level 16): pipeline/report_generator.py",
+      "Deep nesting (indent level 6): pipeline/llm_refactoring_engine.py",
+      "Deep nesting (indent level 9): pipeline/stages.py",
       "Deep nesting (indent level 6): pipeline/complexity_evaluator.py",
       "Deep nesting (indent level 9): pipeline/static_analyzer.py",
-      "Deep nesting (indent level 6): pipeline/llm_refactoring_engine.py"
+      "Deep nesting (indent level 5): pipeline/base.py"
     ],
     "files": [
       {
@@ -1962,6 +1944,243 @@
         ]
       },
       {
+        "file": "pipeline/benchmark_system.py",
+        "mi": 45.22,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_default_args",
+            "file": "pipeline/benchmark_system.py",
+            "line": 110,
+            "cyclomatic_complexity": 8,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "BenchmarkReport",
+            "file": "pipeline/benchmark_system.py",
+            "line": 38,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "finalize",
+            "file": "pipeline/benchmark_system.py",
+            "line": 44,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "BenchmarkSystem",
+            "file": "pipeline/benchmark_system.py",
+            "line": 68,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "run",
+            "file": "pipeline/benchmark_system.py",
+            "line": 74,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_benchmark_pair",
+            "file": "pipeline/benchmark_system.py",
+            "line": 88,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_time",
+            "file": "pipeline/benchmark_system.py",
+            "line": 125,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "BenchmarkResult",
+            "file": "pipeline/benchmark_system.py",
+            "line": 21,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "as_dict",
+            "file": "pipeline/benchmark_system.py",
+            "line": 49,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_compile",
+            "file": "pipeline/benchmark_system.py",
+            "line": 102,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_memory",
+            "file": "pipeline/benchmark_system.py",
+            "line": 134,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_safe_call",
+            "file": "pipeline/benchmark_system.py",
+            "line": 145,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "__post_init__",
+            "file": "pipeline/benchmark_system.py",
+            "line": 31,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline/benchmark_system.py",
+            "line": 71,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
+      },
+      {
+        "file": "pipeline/report_generator.py",
+        "mi": 45.41,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_html",
+            "file": "pipeline/report_generator.py",
+            "line": 25,
+            "cyclomatic_complexity": 14,
+            "rank": "C",
+            "is_smelly": true
+          },
+          {
+            "name": "ReportGenerator",
+            "file": "pipeline/report_generator.py",
+            "line": 10,
+            "cyclomatic_complexity": 6,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline/report_generator.py",
+            "line": 11,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "generate",
+            "file": "pipeline/report_generator.py",
+            "line": 15,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
+      },
+      {
+        "file": "pipeline/llm_refactoring_engine.py",
+        "mi": 66.28,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_suggest_structure",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 126,
+            "cyclomatic_complexity": 6,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "LLMRefactoringEngine",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 57,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_extract_source",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 111,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "refactor",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 79,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "RefactoringReport",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 36,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_refactor_function",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 93,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "as_dict",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 41,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 76,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "RefactoringResult",
+            "file": "pipeline/llm_refactoring_engine.py",
+            "line": 26,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
+      },
+      {
         "file": "pipeline/stages.py",
         "mi": 69.53,
         "mi_rank": "A",
@@ -2154,219 +2373,6 @@
             "name": "run",
             "file": "pipeline/stages.py",
             "line": 148,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
-        "file": "pipeline/report_generator.py",
-        "mi": 45.41,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "_html",
-            "file": "pipeline/report_generator.py",
-            "line": 25,
-            "cyclomatic_complexity": 14,
-            "rank": "C",
-            "is_smelly": true
-          },
-          {
-            "name": "ReportGenerator",
-            "file": "pipeline/report_generator.py",
-            "line": 10,
-            "cyclomatic_complexity": 6,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "__init__",
-            "file": "pipeline/report_generator.py",
-            "line": 11,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "generate",
-            "file": "pipeline/report_generator.py",
-            "line": 15,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
-        "file": "pipeline/base.py",
-        "mi": 100.0,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "Pipeline",
-            "file": "pipeline/base.py",
-            "line": 43,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "execute",
-            "file": "pipeline/base.py",
-            "line": 62,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "PipelineStage",
-            "file": "pipeline/base.py",
-            "line": 24,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "name",
-            "file": "pipeline/base.py",
-            "line": 35,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "run",
-            "file": "pipeline/base.py",
-            "line": 39,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "__init__",
-            "file": "pipeline/base.py",
-            "line": 54,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
-        "file": "pipeline/benchmark_system.py",
-        "mi": 45.22,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "_default_args",
-            "file": "pipeline/benchmark_system.py",
-            "line": 110,
-            "cyclomatic_complexity": 8,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "BenchmarkReport",
-            "file": "pipeline/benchmark_system.py",
-            "line": 38,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "finalize",
-            "file": "pipeline/benchmark_system.py",
-            "line": 44,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "BenchmarkSystem",
-            "file": "pipeline/benchmark_system.py",
-            "line": 68,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "run",
-            "file": "pipeline/benchmark_system.py",
-            "line": 74,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_benchmark_pair",
-            "file": "pipeline/benchmark_system.py",
-            "line": 88,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_time",
-            "file": "pipeline/benchmark_system.py",
-            "line": 125,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "BenchmarkResult",
-            "file": "pipeline/benchmark_system.py",
-            "line": 21,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "as_dict",
-            "file": "pipeline/benchmark_system.py",
-            "line": 49,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_compile",
-            "file": "pipeline/benchmark_system.py",
-            "line": 102,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_memory",
-            "file": "pipeline/benchmark_system.py",
-            "line": 134,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_safe_call",
-            "file": "pipeline/benchmark_system.py",
-            "line": 145,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "__post_init__",
-            "file": "pipeline/benchmark_system.py",
-            "line": 31,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "__init__",
-            "file": "pipeline/benchmark_system.py",
-            "line": 71,
             "cyclomatic_complexity": 1,
             "rank": "A",
             "is_smelly": false
@@ -2572,78 +2578,54 @@
         ]
       },
       {
-        "file": "pipeline/llm_refactoring_engine.py",
-        "mi": 66.28,
+        "file": "pipeline/base.py",
+        "mi": 100.0,
         "mi_rank": "A",
         "functions": [
           {
-            "name": "_suggest_structure",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 126,
-            "cyclomatic_complexity": 6,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "LLMRefactoringEngine",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 57,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_extract_source",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 111,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "refactor",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 79,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "RefactoringReport",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 36,
+            "name": "Pipeline",
+            "file": "pipeline/base.py",
+            "line": 43,
             "cyclomatic_complexity": 3,
             "rank": "A",
             "is_smelly": false
           },
           {
-            "name": "_refactor_function",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 93,
+            "name": "execute",
+            "file": "pipeline/base.py",
+            "line": 62,
             "cyclomatic_complexity": 3,
             "rank": "A",
             "is_smelly": false
           },
           {
-            "name": "as_dict",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 41,
+            "name": "PipelineStage",
+            "file": "pipeline/base.py",
+            "line": 24,
             "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "name",
+            "file": "pipeline/base.py",
+            "line": 35,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "run",
+            "file": "pipeline/base.py",
+            "line": 39,
+            "cyclomatic_complexity": 1,
             "rank": "A",
             "is_smelly": false
           },
           {
             "name": "__init__",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 76,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "RefactoringResult",
-            "file": "pipeline/llm_refactoring_engine.py",
-            "line": 26,
+            "file": "pipeline/base.py",
+            "line": 54,
             "cyclomatic_complexity": 1,
             "rank": "A",
             "is_smelly": false
@@ -2679,7 +2661,7 @@
         "function": "_html",
         "file": "pipeline/report_generator.py",
         "original_ms": 0.0008,
-        "refactored_ms": 0.0008,
+        "refactored_ms": 0.0007,
         "speedup": 0.8,
         "memory_delta_kb": 0.0
       }
