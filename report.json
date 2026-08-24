@@ -2654,15 +2654,15 @@
   },
   "benchmarks": {
     "repo_name": "GiFrac",
-    "overall_speedup": 0.8,
+    "overall_speedup": 0.6,
     "total_memory_saved_kb": 0.0,
     "benchmarks": [
       {
         "function": "_html",
         "file": "pipeline/report_generator.py",
-        "original_ms": 0.0008,
-        "refactored_ms": 0.0007,
-        "speedup": 0.8,
+        "original_ms": 0.0006,
+        "refactored_ms": 0.0005,
+        "speedup": 0.6,
         "memory_delta_kb": 0.0
       }
     ]
