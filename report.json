@@ -38,6 +38,15 @@
         "tool": "pylint"
       },
       {
+        "file": "workspace/GiFrac/pipeline/base.py",
+        "line": 43,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
         "file": "workspace/GiFrac/pipeline/benchmark_system.py",
         "line": 58,
         "column": 0,
@@ -209,114 +218,6 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 99,
-        "column": 0,
-        "code": "C0301",
-        "message": "Line too long (106/100)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 23,
-        "column": 0,
-        "code": "C0115",
-        "message": "Missing class docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 34,
-        "column": 0,
-        "code": "C0115",
-        "message": "Missing class docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 40,
-        "column": 4,
-        "code": "C0116",
-        "message": "Missing function or method docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 80,
-        "column": 4,
-        "code": "C0116",
-        "message": "Missing function or method docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 88,
-        "column": 16,
-        "code": "W1203",
-        "message": "Use lazy % formatting in logging functions",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 90,
-        "column": 16,
-        "code": "W1203",
-        "message": "Use lazy % formatting in logging functions",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 99,
-        "column": 12,
-        "code": "W1510",
-        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 111,
-        "column": 12,
-        "code": "W1510",
-        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 127,
-        "column": 12,
-        "code": "W1510",
-        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 140,
-        "column": 16,
-        "code": "W1510",
-        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
-        "line": 146,
-        "column": 27,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
         "file": "workspace/GiFrac/pipeline/complexity_evaluator.py",
         "line": 109,
         "column": 0,
@@ -452,17 +353,26 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 30,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 26,
         "column": 0,
-        "code": "R0903",
-        "message": "Too few public methods (1/2)",
+        "code": "C0115",
+        "message": "Missing class docstring",
         "severity": "warning",
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 58,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 36,
+        "column": 0,
+        "code": "C0115",
+        "message": "Missing class docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 41,
         "column": 4,
         "code": "C0116",
         "message": "Missing function or method docstring",
@@ -470,17 +380,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 52,
-        "column": 0,
-        "code": "R0903",
-        "message": "Too few public methods (1/2)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 91,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 79,
         "column": 4,
         "code": "C0116",
         "message": "Missing function or method docstring",
@@ -488,8 +389,17 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 108,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 88,
+        "column": 19,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 122,
         "column": 15,
         "code": "W0718",
         "message": "Catching too general exception Exception",
@@ -497,53 +407,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 93,
-        "column": 12,
-        "code": "C0415",
-        "message": "Import outside toplevel (openai)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 80,
-        "column": 0,
-        "code": "R0903",
-        "message": "Too few public methods (1/2)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 124,
-        "column": 4,
-        "code": "C0116",
-        "message": "Missing function or method docstring",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 143,
-        "column": 15,
-        "code": "W0718",
-        "message": "Catching too general exception Exception",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 126,
-        "column": 12,
-        "code": "C0415",
-        "message": "Import outside toplevel (requests)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/strategies.py",
-        "line": 113,
+        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "line": 57,
         "column": 0,
         "code": "R0903",
         "message": "Too few public methods (1/2)",
@@ -652,15 +517,6 @@
       {
         "file": "workspace/GiFrac/pipeline/repo_loader.py",
         "line": 28,
-        "column": 0,
-        "code": "R0903",
-        "message": "Too few public methods (1/2)",
-        "severity": "warning",
-        "tool": "pylint"
-      },
-      {
-        "file": "workspace/GiFrac/pipeline/base.py",
-        "line": 43,
         "column": 0,
         "code": "R0903",
         "message": "Too few public methods (1/2)",
@@ -1190,8 +1046,17 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 26,
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 99,
+        "column": 0,
+        "code": "C0301",
+        "message": "Line too long (106/100)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 23,
         "column": 0,
         "code": "C0115",
         "message": "Missing class docstring",
@@ -1199,8 +1064,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 36,
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 34,
         "column": 0,
         "code": "C0115",
         "message": "Missing class docstring",
@@ -1208,8 +1073,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 41,
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 40,
         "column": 4,
         "code": "C0116",
         "message": "Missing function or method docstring",
@@ -1217,8 +1082,8 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 79,
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 80,
         "column": 4,
         "code": "C0116",
         "message": "Missing function or method docstring",
@@ -1226,17 +1091,107 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
         "line": 88,
-        "column": 19,
+        "column": 16,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 90,
+        "column": 16,
+        "code": "W1203",
+        "message": "Use lazy % formatting in logging functions",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 99,
+        "column": 12,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 111,
+        "column": 12,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 127,
+        "column": 12,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 140,
+        "column": 16,
+        "code": "W1510",
+        "message": "'subprocess.run' used without explicitly defining the value for 'check'.",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/static_analyzer.py",
+        "line": 146,
+        "column": 27,
         "code": "W0718",
         "message": "Catching too general exception Exception",
         "severity": "warning",
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 122,
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 30,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 58,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 52,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 91,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 108,
         "column": 15,
         "code": "W0718",
         "message": "Catching too general exception Exception",
@@ -1244,8 +1199,53 @@
         "tool": "pylint"
       },
       {
-        "file": "workspace/GiFrac/pipeline/llm_refactoring_engine.py",
-        "line": 57,
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 93,
+        "column": 12,
+        "code": "C0415",
+        "message": "Import outside toplevel (openai)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 80,
+        "column": 0,
+        "code": "R0903",
+        "message": "Too few public methods (1/2)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 124,
+        "column": 4,
+        "code": "C0116",
+        "message": "Missing function or method docstring",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 143,
+        "column": 15,
+        "code": "W0718",
+        "message": "Catching too general exception Exception",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 126,
+        "column": 12,
+        "code": "C0415",
+        "message": "Import outside toplevel (requests)",
+        "severity": "warning",
+        "tool": "pylint"
+      },
+      {
+        "file": "workspace/GiFrac/pipeline/strategies.py",
+        "line": 113,
         "column": 0,
         "code": "R0903",
         "message": "Too few public methods (1/2)",
@@ -2645,15 +2645,15 @@
   },
   "benchmarks": {
     "repo_name": "GiFrac",
-    "overall_speedup": 0.6,
+    "overall_speedup": 0.8,
     "total_memory_saved_kb": 0.0,
     "benchmarks": [
       {
         "function": "_html",
         "file": "pipeline/report_generator.py",
-        "original_ms": 0.0006,
-        "refactored_ms": 0.0006,
-        "speedup": 0.6,
+        "original_ms": 0.0008,
+        "refactored_ms": 0.0007,
+        "speedup": 0.8,
         "memory_delta_kb": 0.0
       }
     ]
