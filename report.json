@@ -1710,15 +1710,15 @@
     "maintainability_score": 65.12,
     "smells": [
       "Deep nesting (indent level 6): main.py",
+      "Deep nesting (indent level 6): pipeline/repo_loader.py",
       "Deep nesting (indent level 5): pipeline/base.py",
       "Deep nesting (indent level 17): pipeline/benchmark_system.py",
       "Deep nesting (indent level 5): pipeline/strategies.py",
-      "Deep nesting (indent level 9): pipeline/static_analyzer.py",
-      "Deep nesting (indent level 6): pipeline/repo_loader.py",
-      "Deep nesting (indent level 16): pipeline/report_generator.py",
-      "Deep nesting (indent level 6): pipeline/complexity_evaluator.py",
       "Deep nesting (indent level 9): pipeline/stages.py",
-      "Deep nesting (indent level 6): pipeline/llm_refactoring_engine.py"
+      "Deep nesting (indent level 9): pipeline/static_analyzer.py",
+      "Deep nesting (indent level 6): pipeline/llm_refactoring_engine.py",
+      "Deep nesting (indent level 6): pipeline/complexity_evaluator.py",
+      "Deep nesting (indent level 16): pipeline/report_generator.py"
     ],
     "files": [
       {
@@ -1746,6 +1746,77 @@
             "name": "main",
             "file": "main.py",
             "line": 79,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
+      },
+      {
+        "file": "pipeline/repo_loader.py",
+        "mi": 59.38,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_inventory",
+            "file": "pipeline/repo_loader.py",
+            "line": 90,
+            "cyclomatic_complexity": 7,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "RepoLoader",
+            "file": "pipeline/repo_loader.py",
+            "line": 28,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_build_auth_url",
+            "file": "pipeline/repo_loader.py",
+            "line": 75,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_clone",
+            "file": "pipeline/repo_loader.py",
+            "line": 80,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline/repo_loader.py",
+            "line": 34,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "load",
+            "file": "pipeline/repo_loader.py",
+            "line": 39,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "RepoMetadata",
+            "file": "pipeline/repo_loader.py",
+            "line": 18,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_extract_name",
+            "file": "pipeline/repo_loader.py",
+            "line": 72,
             "cyclomatic_complexity": 1,
             "rank": "A",
             "is_smelly": false
@@ -2038,314 +2109,6 @@
         ]
       },
       {
-        "file": "pipeline/static_analyzer.py",
-        "mi": 63.85,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "_run_pylint",
-            "file": "pipeline/static_analyzer.py",
-            "line": 98,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_run_bandit",
-            "file": "pipeline/static_analyzer.py",
-            "line": 126,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_pylint_score",
-            "file": "pipeline/static_analyzer.py",
-            "line": 138,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "StaticAnalyzer",
-            "file": "pipeline/static_analyzer.py",
-            "line": 49,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "analyze",
-            "file": "pipeline/static_analyzer.py",
-            "line": 80,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_run_flake8",
-            "file": "pipeline/static_analyzer.py",
-            "line": 110,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "StaticAnalysisReport",
-            "file": "pipeline/static_analyzer.py",
-            "line": 34,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "as_dict",
-            "file": "pipeline/static_analyzer.py",
-            "line": 40,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "Issue",
-            "file": "pipeline/static_analyzer.py",
-            "line": 23,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "__init__",
-            "file": "pipeline/static_analyzer.py",
-            "line": 58,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "register_tool",
-            "file": "pipeline/static_analyzer.py",
-            "line": 67,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
-        "file": "pipeline/repo_loader.py",
-        "mi": 59.38,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "_inventory",
-            "file": "pipeline/repo_loader.py",
-            "line": 90,
-            "cyclomatic_complexity": 7,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "RepoLoader",
-            "file": "pipeline/repo_loader.py",
-            "line": 28,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_build_auth_url",
-            "file": "pipeline/repo_loader.py",
-            "line": 75,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_clone",
-            "file": "pipeline/repo_loader.py",
-            "line": 80,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "__init__",
-            "file": "pipeline/repo_loader.py",
-            "line": 34,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "load",
-            "file": "pipeline/repo_loader.py",
-            "line": 39,
-            "cyclomatic_complexity": 2,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "RepoMetadata",
-            "file": "pipeline/repo_loader.py",
-            "line": 18,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_extract_name",
-            "file": "pipeline/repo_loader.py",
-            "line": 72,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
-        "file": "pipeline/report_generator.py",
-        "mi": 45.41,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "_html",
-            "file": "pipeline/report_generator.py",
-            "line": 25,
-            "cyclomatic_complexity": 14,
-            "rank": "C",
-            "is_smelly": true
-          },
-          {
-            "name": "ReportGenerator",
-            "file": "pipeline/report_generator.py",
-            "line": 10,
-            "cyclomatic_complexity": 6,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "__init__",
-            "file": "pipeline/report_generator.py",
-            "line": 11,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "generate",
-            "file": "pipeline/report_generator.py",
-            "line": 15,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
-        "file": "pipeline/complexity_evaluator.py",
-        "mi": 49.02,
-        "mi_rank": "A",
-        "functions": [
-          {
-            "name": "_ast_cc",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 168,
-            "cyclomatic_complexity": 9,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "evaluate",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 79,
-            "cyclomatic_complexity": 8,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "_ast_mi",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 130,
-            "cyclomatic_complexity": 8,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "_detect_smells",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 188,
-            "cyclomatic_complexity": 8,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "ComplexityEvaluator",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 67,
-            "cyclomatic_complexity": 7,
-            "rank": "B",
-            "is_smelly": false
-          },
-          {
-            "name": "_radon_mi",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 111,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_radon_cc",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 144,
-            "cyclomatic_complexity": 5,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "ComplexityReport",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 42,
-            "cyclomatic_complexity": 4,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "as_dict",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 49,
-            "cyclomatic_complexity": 3,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "FunctionComplexity",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 24,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "FileComplexity",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 34,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          },
-          {
-            "name": "_analyze_file",
-            "file": "pipeline/complexity_evaluator.py",
-            "line": 105,
-            "cyclomatic_complexity": 1,
-            "rank": "A",
-            "is_smelly": false
-          }
-        ]
-      },
-      {
         "file": "pipeline/stages.py",
         "mi": 69.53,
         "mi_rank": "A",
@@ -2545,6 +2308,101 @@
         ]
       },
       {
+        "file": "pipeline/static_analyzer.py",
+        "mi": 63.85,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_run_pylint",
+            "file": "pipeline/static_analyzer.py",
+            "line": 98,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_run_bandit",
+            "file": "pipeline/static_analyzer.py",
+            "line": 126,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_pylint_score",
+            "file": "pipeline/static_analyzer.py",
+            "line": 138,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "StaticAnalyzer",
+            "file": "pipeline/static_analyzer.py",
+            "line": 49,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "analyze",
+            "file": "pipeline/static_analyzer.py",
+            "line": 80,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_run_flake8",
+            "file": "pipeline/static_analyzer.py",
+            "line": 110,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "StaticAnalysisReport",
+            "file": "pipeline/static_analyzer.py",
+            "line": 34,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "as_dict",
+            "file": "pipeline/static_analyzer.py",
+            "line": 40,
+            "cyclomatic_complexity": 2,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "Issue",
+            "file": "pipeline/static_analyzer.py",
+            "line": 23,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline/static_analyzer.py",
+            "line": 58,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "register_tool",
+            "file": "pipeline/static_analyzer.py",
+            "line": 67,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
+      },
+      {
         "file": "pipeline/llm_refactoring_engine.py",
         "mi": 66.28,
         "mi_rank": "A",
@@ -2622,6 +2480,148 @@
             "is_smelly": false
           }
         ]
+      },
+      {
+        "file": "pipeline/complexity_evaluator.py",
+        "mi": 49.02,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_ast_cc",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 168,
+            "cyclomatic_complexity": 9,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "evaluate",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 79,
+            "cyclomatic_complexity": 8,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "_ast_mi",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 130,
+            "cyclomatic_complexity": 8,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "_detect_smells",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 188,
+            "cyclomatic_complexity": 8,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "ComplexityEvaluator",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 67,
+            "cyclomatic_complexity": 7,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "_radon_mi",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 111,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_radon_cc",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 144,
+            "cyclomatic_complexity": 5,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "ComplexityReport",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 42,
+            "cyclomatic_complexity": 4,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "as_dict",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 49,
+            "cyclomatic_complexity": 3,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "FunctionComplexity",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 24,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "FileComplexity",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 34,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "_analyze_file",
+            "file": "pipeline/complexity_evaluator.py",
+            "line": 105,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
+      },
+      {
+        "file": "pipeline/report_generator.py",
+        "mi": 45.41,
+        "mi_rank": "A",
+        "functions": [
+          {
+            "name": "_html",
+            "file": "pipeline/report_generator.py",
+            "line": 25,
+            "cyclomatic_complexity": 14,
+            "rank": "C",
+            "is_smelly": true
+          },
+          {
+            "name": "ReportGenerator",
+            "file": "pipeline/report_generator.py",
+            "line": 10,
+            "cyclomatic_complexity": 6,
+            "rank": "B",
+            "is_smelly": false
+          },
+          {
+            "name": "__init__",
+            "file": "pipeline/report_generator.py",
+            "line": 11,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          },
+          {
+            "name": "generate",
+            "file": "pipeline/report_generator.py",
+            "line": 15,
+            "cyclomatic_complexity": 1,
+            "rank": "A",
+            "is_smelly": false
+          }
+        ]
       }
     ]
   },
@@ -2645,15 +2645,15 @@
   },
   "benchmarks": {
     "repo_name": "GiFrac",
-    "overall_speedup": 0.4,
+    "overall_speedup": 0.6,
     "total_memory_saved_kb": 0.0,
     "benchmarks": [
       {
         "function": "_html",
         "file": "pipeline/report_generator.py",
-        "original_ms": 0.0004,
-        "refactored_ms": 0.0004,
-        "speedup": 0.4,
+        "original_ms": 0.0006,
+        "refactored_ms": 0.0005,
+        "speedup": 0.6,
         "memory_delta_kb": 0.0
       }
     ]
